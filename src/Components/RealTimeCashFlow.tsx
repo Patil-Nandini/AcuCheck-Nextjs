@@ -87,10 +87,12 @@ export default function FutureUnderWritingHero() {
               key={i}
               className="relative flex flex-col justify-center items-center w-[260px] h-[190px]"
             >
-              <img
+              <Image
                 src="/CurveCombineCard.png"
                 alt="Card background"
+                fill
                 className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+                priority
               />
 
               <div className="relative z-10 flex flex-col justify-center items-center text-white gap-5">

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 const industries = [
@@ -10,7 +11,8 @@ const industries = [
   },
   {
     title: "BNPL Providers",
-    description: "Instant approval decisions with real-time affordability checks",
+    description:
+      "Instant approval decisions with real-time affordability checks",
     icon: "/Industry2.svg",
     cardBg: "from-[#FFF6E0] to-[#F2F8FF]",
   },
@@ -60,7 +62,8 @@ const IndustriesWeServe = () => {
         my-4
         "
       style={{
-        backgroundImage: "url('/Industies-bg.png'), linear-gradient(135deg, #E3EEFF 0%, #D4E2FA 100%)",
+        backgroundImage:
+          "url('/Industies-bg.png'), linear-gradient(135deg, #E3EEFF 0%, #D4E2FA 100%)",
         backgroundSize: "cover, 100% 100%",
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundPosition: "center center, center center",
@@ -71,7 +74,8 @@ const IndustriesWeServe = () => {
           Industries We Serve
         </h2>
         <p className="mt-2 text-gray-700 text-base md:text-lg max-w-2xl">
-          Trusted by innovative lenders across financial services for modern fintech solutions.
+          Trusted by innovative lenders across financial services for modern
+          fintech solutions.
         </p>
       </div>
 
@@ -106,15 +110,19 @@ const IndustriesWeServe = () => {
                 hover:border-blue-200
               `}
               style={{
-                background:
-                  "linear-gradient(135deg, #fff 65%, #f2f8ff 100%)",
+                background: "linear-gradient(135deg, #fff 65%, #f2f8ff 100%)",
               }}
             >
-              <div className={`w-20 h-20 rounded-xl flex items-center justify-cente mb-2`}>
-                <img
+              <div
+                className={`w-20 h-20 rounded-xl flex items-center justify-cente mb-2`}
+              >
+                <Image
                   src={industry.icon}
                   alt={industry.title}
+                  width={80}
+                  height={80}
                   className="w-20 h-20 object-contain"
+                  priority
                 />
               </div>
               <h3 className="text-base md:text-lg font-semibold text-gray-900">

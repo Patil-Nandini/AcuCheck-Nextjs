@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const CashFlow = () => {
@@ -7,10 +8,13 @@ const CashFlow = () => {
       style={{ backgroundImage: "url('/AcuCheck-bg.png')" }}
     >
       <div className="w-full flex justify-center xl:py-10 xl:max-w-[1065px] xl:max-h-[505px]">
-        <img
+        <Image
           src="/CashFlow.webp"
           alt="Cash Flow"
-          className="w-full max-w-[100%]  md:max-w-[50%] lg:max-w-[30%]  object-contain "
+          width={600}
+          height={400} 
+          className="w-full max-w-[100%] md:max-w-[50%] lg:max-w-[30%] object-contain"
+          priority
         />
       </div>
 

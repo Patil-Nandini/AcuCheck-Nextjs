@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function AbilityToPay() {
@@ -9,24 +11,16 @@ export default function AbilityToPay() {
       }}
     >
       <div className="relative flex-1  overflow-hidden rounded-[36px] hidden md:block 2xl:max-w-[1450px]">
-        <img
+        <Image
           src="/AbilityToPay.png"
           alt="banner"
-          className="object-cover w-full h-full "
+          width={1920} 
+          height={1080}
+          className="object-cover w-full h-full"
+          priority 
         />
       </div>
       <main className="flex flex-col items-center justify-start min-h-screen px-5 py-8 bg-[#F4FBFF] font-[Sarabun] md:hidden">
-        {/* <div className="w-full relative flex justify-center">
-          <Image
-            src="/MobileAbility.png" 
-            alt="Ability To Pay Banner"
-            width={400}
-            height={120}
-            className="rounded-[20px]"
-          />
-        </div> */}
-
-        {/* Heading */}
         <section className="w-full mt-4 text-center">
           <h1 className="text-[35px] font-extrabold leading-tight text-[#0F1720]">
             Ability to Pay -
@@ -94,9 +88,7 @@ export default function AbilityToPay() {
 
           {/* Card 3 */}
           <div className="bg-[url('/MobileFrame1.png')] bg-cover bg-center bg-no-repeat rounded-[16px] py-6 mb-4 text-center shadow">
-              <h2 className="text-[28px] font-extrabold text-[#fa504b]">
-              $400
-            </h2>
+            <h2 className="text-[28px] font-extrabold text-[#fa504b]">$400</h2>
             <p className="text-[28px] mt-2 text-[#0F1720]">“</p>
             <p className="text-[16px] font-semibold text-[#0F1720] mt-2">
               Proposed Payment

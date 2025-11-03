@@ -79,8 +79,8 @@ export default function FoundingMember() {
                   </h3>
                   <p className="mt-1 text-gray-600 text-[18px]">
                     Get up and run in minutes, not months. Our streamlined
-                    onboarding process ensures you're making smarter lending
-                    decisions today. 
+                    onboarding process ensures you&apos;re making smarter lending
+                    decisions today.
                   </p>
                 </div>
               </div>
@@ -107,10 +107,10 @@ export default function FoundingMember() {
                     loading="lazy"
                   />
                   <span className="ml-2 whitespace-nowrap hidden sm:block">
-                    Claim Your Founding Member Status 
+                    Claim Your Founding Member Status
                   </span>
                    <span className="ml-2 whitespace-nowrap sm:hidden">
-                    Claim Your Founding<br/> Member Status 
+                    Claim Your Founding<br/> Member Status
                   </span>
                 </button>
               </Link>
