@@ -5,27 +5,32 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How quickly can I get approved for an AcuFi account?",
+    question: "How is AcuCheck different from a credit bureau report?",
     answer:
-      "Most AcuFi customers are underwritten and onboarded within 1–3 business days.",
+      "Unlike credit reports, which are static and often outdated, AcuCheck uses live cash flow data from banks to assess a borrower’s current financial health, including recent income, spending habits, and loan obligations. It shows what credit scores can’t. ",
   },
   {
-    question: "What industries do AcuFi specialize in?",
+    question: "Do I need technical resources to use AcuCheck?",
     answer:
       "AcuFi supports a wide range of high-risk and emerging industries, including Short-term lending, cannabis, crypto, CBD, credit repair, debt relief, nutraceuticals, and affiliate marketing platforms.",
   },
   {
-    question: "What makes AcuFi different from traditional banks?",
+    question: "Can I customize the scoring model to fit my lending policies? ",
     answer:
       "Unlike traditional banks, AcuFi is purpose-built for high-risk and high-growth industries. We offer faster account underwriting (1–3 days), real-time lending intelligence, and payment processing designed for sectors most banks avoid—like short term lending, cannabis, crypto and nutraceuticals.",
   },
   {
-    question: "Can I use AcuFi if I’ve been rejected by other banks?",
+    question: "How does AcuCheck reduce loan defaults?",
     answer:
       "Absolutely. AcuFi is created for businesses that have been labelled “unbankable” by traditional institutions. We specialize in helping overlooked industries get access to Modern banking.",
   },
   {
-    question: "Is AcuFi secure and compliant for high-risk industries?",
+    question: "Can AcuCheck integrate with our existing lending systems?",
+    answer:
+      "Yes. AcuFi is PCI-DSS ready, NACHA-compliant, and uses enterprise-grade encryption for all data. We are purposefully built to meet compliance and security needs for regulated and high-risk markets.",
+  },
+   {
+    question: "How current is the financial data AcuCheck analyzed? ",
     answer:
       "Yes. AcuFi is PCI-DSS ready, NACHA-compliant, and uses enterprise-grade encryption for all data. We are purposefully built to meet compliance and security needs for regulated and high-risk markets.",
   },
@@ -126,8 +131,8 @@ export default function FAQ() {
         <div className="w-full lg:w-[40%] flex flex-col items-center justify-start">
           <object
             type="image/svg+xml"
-            data="/AcuFi-faq.svg"
-            className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-[80%] mb-6"
+            data="/Acucheck-faq.svg"
+            className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-[90%] mb-6"
             aria-label="AcuFi FAQ illustration"
           >
             AcuFi FAQ illustration
@@ -137,7 +142,7 @@ export default function FAQ() {
               Still, have questions?
             </div>
             <div className="text-[#181F2C] mb-4 text-xs sm:text-sm md:text-base">
-              Can’t find the answer you’re looking for?
+              Can&apos;t find the answer you&apos;re looking for?
             </div>
             <button
               type="button"
@@ -149,9 +154,7 @@ export default function FAQ() {
                 paddingBottom: "25px",
               }}
               aria-label="Start Your Free 90-Day Trial"
-              onClick={() =>
-                (window.location.href = "/under-renovation")
-              }
+              onClick={() => (window.location.href = "/under-renovation")}
             >
               <Image
                 src="/RocketIcon.png"

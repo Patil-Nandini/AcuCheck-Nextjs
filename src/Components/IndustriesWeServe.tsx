@@ -7,43 +7,37 @@ const industries = [
     description: "Reduce risk in high-velocity lending environments",
     icon: "/Industry1.svg",
     cardBg: "from-[#F9EBE7] to-[#F2F8FF]",
-    iconBg: "bg-[#FFD9D1]",
   },
   {
     title: "BNPL Providers",
     description: "Instant approval decisions with real-time affordability checks",
     icon: "/Industry2.svg",
     cardBg: "from-[#FFF6E0] to-[#F2F8FF]",
-    iconBg: "bg-[#FFE9AA]",
   },
   {
     title: "Medical Finance",
     description: "Assess patient payment capacity without credit checks",
     icon: "/Industry3.svg",
     cardBg: "from-[#F0F5FF] to-[#F2F8FF]",
-    iconBg: "bg-[#D8E2FF]",
   },
   {
     title: "Auto Loans",
     description: "Verify borrower affordability instantly with live data",
-    icon: "/Industry1.svg",
+    icon: "/Industry4.svg",
     cardBg: "from-[#F9EBE7] to-[#F2F8FF]",
-    iconBg: "bg-[#FFD9D1]",
   },
   {
     title: "Mortgage Lenders",
     description:
       "Accelerate loan processing with fast, accurate financial verification",
-    icon: "/Industry2.svg",
+    icon: "/Industry5.svg",
     cardBg: "from-[#FFF6E0] to-[#F2F8FF]",
-    iconBg: "bg-[#FFE9AA]",
   },
   {
     title: "Credit Unions",
     description: "Empower members with fair, data-driven lending assessments",
-    icon: "/Industry3.svg",
+    icon: "/Industry6.svg",
     cardBg: "from-[#F0F5FF] to-[#F2F8FF]",
-    iconBg: "bg-[#D8E2FF]",
   },
 ];
 
@@ -72,7 +66,6 @@ const IndustriesWeServe = () => {
         backgroundPosition: "center center, center center",
       }}
     >
-      {/* Heading */}
       <div className="mb-8 w-full max-w-3xl text-left">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-1">
           Industries We Serve
@@ -117,7 +110,7 @@ const IndustriesWeServe = () => {
                   "linear-gradient(135deg, #fff 65%, #f2f8ff 100%)",
               }}
             >
-              <div className={`w-20 h-20 rounded-xl flex items-center justify-center ${industry.iconBg} mb-2`}>
+              <div className={`w-20 h-20 rounded-xl flex items-center justify-cente mb-2`}>
                 <img
                   src={industry.icon}
                   alt={industry.title}

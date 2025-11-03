@@ -23,21 +23,20 @@ const HowItWorks = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [fade, setFade] = useState(true);
 
-  // Smooth fade between texts every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); 
+      setFade(false);
       setTimeout(() => {
         setCurrentStep((prev) => (prev + 1) % steps.length);
-        setFade(true); 
-      }, 400); 
+        setFade(true);
+      }, 350);
     }, 6000);
     return () => clearInterval(interval);
   }, [steps.length]);
 
   return (
     <section
-      className="relative w-full flex flex-col items-center justify-center py-16 px-4 sm:px-8 bg-no-repeat bg-cover bg-center"
+      className="relative w-full flex flex-col items-center justify-center pb-16 lg:py-16 px-4 sm:px-8 bg-no-repeat bg-cover bg-center"
       style={{
         backgroundImage: "url('/bg-how-it-works.svg')",
         backgroundPosition: "center",
@@ -53,8 +52,10 @@ const HowItWorks = () => {
         </h2>
         <p className="mt-4 text-gray-700 text-base sm:text-lg max-w-xl mx-auto">
           Transform your lending process in 3 simple steps with our easy <br />
-          <span className="font-semibold text-gray-900">API integration</span> or{" "}
-          <span className="font-semibold text-gray-900">Lender Portal.</span>
+          <span className="font-semibold text-gray-900">
+            API integration
+          </span>{" "}
+          or <span className="font-semibold text-gray-900">Lender Portal.</span>
         </p>
       </div>
 
@@ -67,18 +68,24 @@ const HowItWorks = () => {
             loop
             muted
             playsInline
-            className="w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] md:w-[400px] md:h-[400px]"
+            className="w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] md:w-[400px] md:h-[400px] hidden lg:block"
           />
+          <object
+            type="image/svg+xml"
+            data="/How-it-works-mobile.svg"
+            className="w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] md:w-[400px] md:h-[400px] lg:hidden"
+          ></object>
 
           {/* Desktop text positions */}
-          <div className="hidden md:block absolute w-full h-full pointer-events-none">
+          <div className="hidden lg:block absolute w-full h-full pointer-events-none">
             {/* Step 01 */}
             <div className="absolute right-[-110px] top-[2px] w-72 text-right">
               <h3 className="font-bold text-lg text-[#000000] mb-1 text-start">
                 CONNECT BANK ACCOUNT
               </h3>
               <p className="text-[#0F1720] text-[16px] text-start">
-                Borrowers securely connect their bank account through our trusted platform with bank-level encryption.
+                Borrowers securely connect their bank account through our
+                trusted platform with bank-level encryption.
               </p>
             </div>
             {/* Step 02 */}
@@ -87,7 +94,8 @@ const HowItWorks = () => {
                 ANALYZE CASH FLOW
               </h3>
               <p className="text-[#0F1720] text-[16px] text-start">
-                Analyze real-time banking data, transactions, income patterns, and spending behavior in seconds.
+                Analyze real-time banking data, transactions, income patterns,
+                and spending behavior in seconds.
               </p>
             </div>
             {/* Step 03 */}
@@ -96,7 +104,8 @@ const HowItWorks = () => {
                 MAKE SMART DECISIONS
               </h3>
               <p className="text-[#0F1720] text-[16px] text-start">
-                Get decision-ready insights including DTI, ability to pay, NSF alerts, and risk scoring.
+                Get decision-ready insights including DTI, ability to pay, NSF
+                alerts, and risk scoring.
               </p>
             </div>
           </div>
@@ -106,7 +115,7 @@ const HowItWorks = () => {
       {/* Mobile fade text */}
       <div
         key={currentStep}
-        className={`block md:hidden text-center relative z-10 px-4 transition-opacity duration-500 ease-in-out ${
+        className={`block lg:hidden text-center relative z-10 px-4 transition-opacity duration-500 ease-in-out ${
           fade ? "opacity-100" : "opacity-0"
         }`}
       >

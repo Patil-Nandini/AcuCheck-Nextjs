@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CashFlowAnalysis() {
   return (
-    <section className="w-[100%] pt-16 pb-16 lg:pb-0 px-4 md:px-8 lg:px-16 bg-white h-auto">
+    <section className="w-[100%] pt-16 pb-16 lg:pb-0  bg-white h-auto">
       <div className="flex flex-col items-center text-center mb-12">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
           Why Lenders Are Switching <br className="hidden sm:block" />
@@ -16,7 +16,7 @@ export default function CashFlowAnalysis() {
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-20 relative w-[100%]">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-10 relative w-[100%] w-full mb-10">
         <div
           className="flex flex-col w-[100%] max-w-[299px] min-h-[355px]
              p-6 relative bg-cover bg-center"
@@ -31,7 +31,7 @@ export default function CashFlowAnalysis() {
               loading="lazy"
             />
             <h3 className="text-lg font-semibold text-[#17012C]">
-              Legacy Credit Tools 
+              Legacy Credit Tools
             </h3>
           </div>
           <ul className="space-y-3 text-sm text-gray-700">
@@ -43,7 +43,7 @@ export default function CashFlowAnalysis() {
                 height={20}
                 loading="lazy"
               />
-              <span>Static credit reports miss the last 30+ days </span>
+              <span>Static credit reports miss the last 30+ days</span>
             </li>
             <li className="flex items-center gap-2">
               <Image
@@ -53,7 +53,7 @@ export default function CashFlowAnalysis() {
                 height={20}
                 loading="lazy"
               />
-              <span>IBV just dumps raw data with no insight </span>
+              <span>IBV just dumps raw data with no insight</span>
             </li>
             <li className="flex items-center gap-2">
               <Image
@@ -85,7 +85,7 @@ export default function CashFlowAnalysis() {
             width={300}
             height={560}
             loading="lazy"
-            className="object-cover mt-[30px] lg:mt-[108px] xl:mt-[30px]"
+            className="object-cover mt-[30px] lg:mt-[108px] xl:mt-[70px]"
           />
         </div>
 
@@ -157,29 +157,26 @@ export default function CashFlowAnalysis() {
       </div>
       <div
         className="
-    w-[100%]
-    h-[75px]
+    relative
+    w-full
+    h-[85px]
     flex
     items-center
     justify-center
-    p-6
-    opacity-100
-    relative
-    backdrop-blur-md
-    bg-gradient-to-r
-    from-[#eff6ff80]  
-    to-[#e3f1ff80]    
+    lg:top-[-56px]
     shadow-md
-    top-[-16px]
   "
         style={{
           background:
             "linear-gradient(274.17deg, rgba(239,246,255,0.5) 0%, rgba(227,241,255,0.5) 100%)",
         }}
       >
-        <span className="text-[#054396] text-center text-xl md:text-2xl font-semibold w-full">
-          It&apos;s not just bank data; it&apos;s intelligence you can underwrite with.
-        </span>
+        <div className="bg-white py-2 flex items-center justify-center w-full backdrop-blur-sm">
+          <span className="text-[#054396] text-center text-xl md:text-2xl font-semibold w-full">
+            It&apos;s not just bank data; it&apos;s intelligence you can
+            underwrite with.
+          </span>
+        </div>
       </div>
     </section>
   );

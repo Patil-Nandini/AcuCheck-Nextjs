@@ -89,7 +89,7 @@ export default function FoundingMember() {
               <Link href="/under-renovation">
                 <button
                   type="button"
-                  className="flex items-center justify-center h-[95px] text-white font-semibold cursor-pointer w-[270px] sm:w-[330px] px-7"
+                  className="flex items-center justify-center h-[100px] sm:h-[95px] text-white font-semibold cursor-pointer w-[270px] sm:w-[330px] px-7"
                   style={{
                     backgroundImage: "url('/AcuViewButtonBg.webp')",
                     backgroundSize: "100% 100%",
@@ -106,8 +106,11 @@ export default function FoundingMember() {
                     height={20}
                     loading="lazy"
                   />
-                  <span className="ml-2 whitespace-nowrap">
+                  <span className="ml-2 whitespace-nowrap hidden sm:block">
                     Claim Your Founding Member Status 
+                  </span>
+                   <span className="ml-2 whitespace-nowrap sm:hidden">
+                    Claim Your Founding<br/> Member Status 
                   </span>
                 </button>
               </Link>

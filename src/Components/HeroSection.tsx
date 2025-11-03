@@ -8,11 +8,11 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative w-full bg-cover bg-center px-6 md:px-12 lg:px-20 mt-30"
-      style={{ backgroundImage: "url('/AcuCheck-bg.png')" }} 
+      className="relative w-full bg-cover bg-center px-6 md:px-12 lg:px-10 xl:px-20 pt-30"
+      style={{ backgroundImage: "url('/AcuCheck-bg.png')" }}
     >
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-        <div className="flex-1 text-center md:text-left space-y-6">
+      <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between xl:justify-center xl:gap-10 pt-5 xl:max-w-[1280px] xl:max-w-[668px]">
+        <div className="flex-1 text-center md:text-left space-y-7">
           <h1
             className="
               font-extrabold 
@@ -21,10 +21,11 @@ const HeroSection = () => {
               text-[32px] 
               sm:text-[36px] 
               md:text-[40px] 
-              lg:text-[45px]
+                lg:text-[35px]
+              xl:text-[45px]
             "
           >
-            Cash Flow Is the <br/>
+            Cash Flow Is the <br />
             <span
               className="
                 inline-block 
@@ -39,7 +40,8 @@ const HeroSection = () => {
                 text-[24px] 
                 sm:text-[26px] 
                 md:text-[28px] 
-                lg:text-[40px] 
+                lg:text-[30px]
+                xl:text-[40px] 
                 px-6 
                 sm:px-7 
                 md:px-8 
@@ -55,15 +57,13 @@ const HeroSection = () => {
             Credit Score
           </h1>
 
-          {/* Subtext */}
-          <p className="text-gray-800 text-base md:text-lg max-w-md">
+          <p className="text-gray-800 text-base md:text-[20pxpx] max-w-xl lg:max-w-md">
             A smarter way to determine the{" "}
             <span className="font-semibold">ability-to-pay</span> through cash
             flow analysis.
           </p>
 
-          {/* CTA Button */}
-          <div className="flex gap-4 w-full bg-transparent justify-start items-start lg:mt-5">
+          <div className="flex gap-4 w-full bg-transparent justify-center md:justify-start items-start lg:mt-5">
             <div
               className="
                 group relative bg-transparent z-10 
@@ -76,7 +76,7 @@ const HeroSection = () => {
                 hover:scale-105 
                 rounded-[20px] bg-cover bg-center cursor-pointer
               "
-              style={{ backgroundImage: "url('/primary.png')" }} // ✅ use /public path
+              style={{ backgroundImage: "url('/primary.png')" }}
               onClick={() => router.push("/under-renovation")}
             >
               <div className="flex justify-end w-full mr-4">
@@ -95,32 +95,87 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Feature boxes */}
-          <div className="flex flex-col md:flex-row gap-4 mt-8">
-            <div className="bg-gradient-to-r from-[#022b6a] to-[#014d9a] text-white rounded-2xl p-4 flex-1 text-center shadow-md">
-              <h3 className="text-xl font-bold">12,000 +</h3>
-              <p className="text-sm">CONNECTED BANKS</p>
+          <section className="relative w-full flex justify-center items-center lg:py-4 xl:py-10 py-9 overflow-hidden ml-[-7px] hidden md:block xl:max-w-[620px] xl:max-h-[175px]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover rounded-[32px] md:p-[20px] lg:p-[0px]"
+              preload="auto"
+              poster="/AcuCheck_homebg.png"
+            >
+              <source src="/AcuCheck_homebg.webm" type="video/webm" />
+            </video>
+
+            <div className="relative z-10 flex flex-col md:flex-row gap-5 text-white text-center px-10 py-5 w-full max-w-5xl">
+              <div className="flex-1">
+                <h3 className="text-[20px] font-bold">12,000 +</h3>
+                <p className="text-[16px]">CONNECTED BANKS</p>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-[20px] font-bold">Real-Time</h3>
+                <p className="text-[16px]">CASH FLOW ANALYSIS</p>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-[20px] font-bold">Instant</h3>
+                <p className="text-[16px]">DECISION MAKING</p>
+              </div>
             </div>
-            <div className="bg-gradient-to-r from-[#022b6a] to-[#014d9a] text-white rounded-2xl p-4 flex-1 text-center shadow-md">
-              <h3 className="text-xl font-bold">Real-Time</h3>
-              <p className="text-sm">CASH FLOW ANALYSIS</p>
-            </div>
-            <div className="bg-gradient-to-r from-[#022b6a] to-[#014d9a] text-white rounded-2xl p-4 flex-1 text-center shadow-md">
-              <h3 className="text-xl font-bold">Instant</h3>
-              <p className="text-sm">DECISION MAKING</p>
+          </section>
+          <div className="relative flex justify-center mx-auto items-center w-[272px] h-[405px] sm:w-full sm:h-auto md:hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              poster="/AcuCheck_homebg.png"
+              className="absolute inset-0 w-full h-full object-cover rounded-[32px] sm:hidden"
+            >
+              <source src="/AcuCheck-Homepage-mobile.webm" type="video/webm" />
+            </video>
+
+            {/* Text Overlay */}
+            <div className="relative z-10 flex flex-col sm:flex-row gap-[46px] md:gap-5 text-white text-center px-10 py-5 w-full sm:max-w-5xl">
+              <div className="flex-1">
+                <h3 className="text-[20px] font-bold">12,000 +</h3>
+                <p className="text-[14px] lg:text-[16px]">CONNECTED BANKS</p>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-[20px] font-bold">Real-Time</h3>
+                <p className="text-[14px] lg:text-[16px]">CASH FLOW ANALYSIS</p>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-[20px] font-bold">Instant</h3>
+                <p className="text-[14px] lg:text-[16px]">DECISION MAKING</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="relative w-full h-[100%] flex flex-col items-center justify-center overflow-hidden">
-            <object
-              type="image/svg+xml"
-              data="/Acucheck-Logo-Animation.svg"
-              className="absolute top-[-40] left-4 w-12 h-12 md:w-36 md:h-36 z-10"
-              aria-label="AcuCheck Logo Animation"
-            ></object>
+        <div className="flex-1 flex items-center justify-center h-[100%] xl:max-w-[620px] xl:max-h-[616px]">
+          <div className="relative w-[100%] h-full flex flex-col items-center justify-center overflow-hidden">
+            <div
+              className="absolute top-[10px] left-[-3px] z-10 w-12 h-12 md:w-36 md:h-36 flex items-center justify-center rounded-xl"
+              style={{
+                background:
+                  "linear-gradient(116.85deg, rgba(208, 232, 255, 0.15) 29.18%, rgba(245, 250, 255, 0.15) 87.96%)",
+                backdropFilter: "blur(8.6px)",
+                boxShadow: "0px 16.94px 13.55px -6.78px #04A3E314",
+                border: "1.27px solid",
+                borderImageSource:
+                  "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%)",
+                borderRadius: "96px",
+              }}
+            >
+              <object
+                type="image/svg+xml"
+                data="/Acucheck-Logo-Animation.svg"
+                className="w-12 h-12 md:w-36 md:h-36"
+                aria-label="AcuCheck Logo Animation"
+              ></object>
+            </div>
 
             <video
               src="/HeroSectionVideo.webm"
@@ -128,7 +183,7 @@ const HeroSection = () => {
               loop
               muted
               playsInline
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-[100%] object-contain pt-10 "
             />
           </div>
         </div>

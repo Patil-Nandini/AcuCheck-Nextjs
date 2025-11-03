@@ -1,4 +1,6 @@
+import AbilityToPaySection from "@/Components/AbilityToPay";
 import AcuCheckBenefits from "@/Components/AcuCheckBenifits";
+import AcuCheckReportRequest from "@/Components/AcuCheckReportRequest";
 import CashFlow from "@/Components/CashFlow";
 import CashFlowAnalysis from "@/Components/CashFlowAnalysis";
 import Clients from "@/Components/Clients";
@@ -9,6 +11,8 @@ import Header from "@/Components/Header";
 import HeroSection from "@/Components/HeroSection";
 import HowItWorks from "@/Components/HowItWorks";
 import IndustriesWeServe from "@/Components/IndustriesWeServe";
+import FutureUnderWritingHero from "@/Components/RealTimeCashFlow";
+import SmarterLendingCashFlow from "@/Components/SmarterLendingCashFlow";
 import Testimonials from "@/Components/Testimonials";
 
 export default function Home() {
@@ -22,9 +26,13 @@ export default function Home() {
         <HowItWorks />
         <AcuCheckBenefits/>
         <IndustriesWeServe/>
+        <AbilityToPaySection/>
         <Testimonials/>
+        <AcuCheckReportRequest/>
+        <SmarterLendingCashFlow/>
         <FAQ />
         <FoundingMember />
+        <FutureUnderWritingHero/>
         <Clients />
         <Footer />
       </div>
