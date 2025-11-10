@@ -12,7 +12,7 @@ const HeroSection = () => {
       style={{ backgroundImage: "url('/AcuCheck-bg.png')" }}
     >
       <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between xl:justify-center xl:gap-10 pt-5 xl:max-w-[1280px] xl:max-w-[668px]">
-        <div className="flex-1 text-center md:text-left space-y-7">
+        <div className="flex-1 text-center md:text-left space-y-2 mt-9">
           <h1
             className="
               font-extrabold 
@@ -89,13 +89,13 @@ const HeroSection = () => {
                   className="w-[35px] transition-transform duration-500 ease-in-out origin-center group-hover:rotate-45"
                 />
               </div>
-              <p className="text-[18px] lg:text-[16px] xl:text-[18px] text-start mb-7 pt-5">
+              <p className="text-[18px] lg:text-[16px] xl:text-[18px] text-start  pt-5">
                 Request AcuCheck Demo
               </p>
             </div>
           </div>
 
-          <section className="relative w-full flex justify-center items-center lg:py-4 xl:py-10 py-9 overflow-hidden ml-[-7px] hidden md:block xl:max-w-[620px] xl:max-h-[175px]">
+          <section className="relative w-full flex justify-center items-center lg:py-4 xl:py-10 py-9 overflow-hidden ml-[-7px] hidden md:block xl:max-w-[620px] xl:max-h-[185px]">
             <video
               autoPlay
               loop
@@ -123,7 +123,7 @@ const HeroSection = () => {
               </div>
             </div>
           </section>
-          <div className="relative flex justify-center mx-auto items-center w-[272px] h-[405px] sm:w-full sm:h-auto md:hidden">
+          <div className="relative flex justify-center mx-auto items-center w-[272px] h-[405px] sm:w-full sm:h-[100%] md:hidden">
             <video
               autoPlay
               loop
