@@ -162,7 +162,7 @@ const SmarterLendingCashFlow = () => {
 
           <div className="relative flex justify-center items-center mt-[-90px] md:mt-[-155px] xl:mt-[-146px]">
             <Image
-              src="/TextGlobe1.png"
+              src="/TextGlobe1.svg"
               alt="Smarter Center Globe"
               width={240}
               height={240}
